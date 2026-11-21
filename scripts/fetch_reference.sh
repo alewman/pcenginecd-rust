@@ -23,7 +23,7 @@ fetch() { # name pin commit source
     [ "$(git -C "$dest" rev-parse HEAD)" = "$3" ] || { echo "$1: not at $3" >&2; exit 1; }
     echo "$1 $2 ($(git -C "$dest" rev-parse --short HEAD)) in $dest"
 }
-fetch pcenginecd-python 5c06d1b 5c06d1bb347df24ca331059987cf9463ab7a6bb3 "${PCENGINECD_PYTHON:-https://github.com/alewman/pcenginecd-python}"
-fetch pcengine-python 03ac699 03ac6998c812a291e5f91882552df5ae712ba870 "${PCENGINE_PYTHON:-https://github.com/alewman/pcengine-python}"
-fetch huc6280-python 6ce348e 6ce348e13c9ef3009bd07e7938c4b48956eeadc6 "${HUC6280_PYTHON:-https://github.com/alewman/huc6280-python}"
+fetch pcenginecd-python 54b3446 54b34466c1fe599f93058d0cfa201060b7a1bb79 "${PCENGINECD_PYTHON:-https://github.com/alewman/pcenginecd-python}"
+fetch pcengine-python 647de63 647de63f60ce7a6a74f584c4e37673c2ba1505ba "${PCENGINE_PYTHON:-https://github.com/alewman/pcengine-python}"
+fetch huc6280-python 5cff9e8 5cff9e8afa68cf3e0b8507ddfd84c8a36f4b2c21 "${HUC6280_PYTHON:-https://github.com/alewman/huc6280-python}"
 fetch 6502-python 2146eba 2146eba3b3da4d2cc6c8fa3994f100bcb5abf039 "${SIXFIVEOHTWO_PYTHON:-https://github.com/alewman/6502-python}"
