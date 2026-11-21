@@ -1,0 +1,11 @@
+/target
+/external
+/scratch
+__pycache__/
+*.pce
+*.sgx
+*.chd
+*.cue
+*.iso
+*.bin
+*.wav

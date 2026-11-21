@@ -1,0 +1,57 @@
+# name	frames	card	disc	arguments
+probe-base	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes
+probe-plain	600	$PROBE	$DISCS/mixed.cue	
+probe-us-tg16	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --region-us --machine tg16
+probe-no-super	600	$PROBE	$DISCS/mixed.cue	--arcade --super no
+probe-no-disc	600	$PROBE	-	--arcade --super yes
+probe-data-disc	600	$PROBE	$DISCS/data.cue	--arcade --super yes
+probe-pregap-disc	600	$PROBE	$DISCS/pregap.cue	--arcade --super yes
+probe-bram	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --bram $DISCS/bram.bin
+probe-reset-button	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --reset 580:button
+probe-reset-power	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --reset 590:power
+probe-reset-power-early	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --reset 250:power --reset 300:button
+sw-scsi.SEL_TO_COMMAND_PHASE	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.SEL_TO_COMMAND_PHASE=60000
+sw-scsi.COMMAND_BYTE_CLOCKS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.COMMAND_BYTE_CLOCKS=1500
+sw-scsi.TEST_UNIT_READY	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.TEST_UNIT_READY=300000
+sw-scsi.TOC_CLOCKS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.TOC_CLOCKS=4500
+sw-scsi.SUBQ_CLOCKS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.SUBQ_CLOCKS=6000
+sw-scsi.QUICK_ANSWER	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.QUICK_ANSWER=6000
+sw-scsi.UNKNOWN_COMMAND_CLOCKS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.UNKNOWN_COMMAND_CLOCKS=150000
+sw-scsi.DATA_TO_STATUS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.DATA_TO_STATUS=6000
+sw-scsi.STATUS_TO_MESSAGE	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.STATUS_TO_MESSAGE=3000
+sw-scsi.MESSAGE_TO_FREE	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.MESSAGE_TO_FREE=3000
+sw-scsi.AUTO_ACK_CLOCKS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.AUTO_ACK_CLOCKS=21
+sw-scsi.SEEK_MEASUREMENT_EXTRA	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.SEEK_MEASUREMENT_EXTRA=0
+sw-scsi.SECTOR_CLOCKS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.SECTOR_CLOCKS=143181
+sw-scsi.REREAD_PENALTY_MS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.REREAD_PENALTY_MS=100
+sw-scsi.ABORT_STATUS_BYTES	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.ABORT_STATUS_BYTES=2
+sw-scsi.UNKNOWN_COMMAND_CHECK_CONDITION	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch scsi.UNKNOWN_COMMAND_CHECK_CONDITION=true
+sw-unit.CHANNEL_LATCH_GUARD	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch unit.CHANNEL_LATCH_GUARD=10
+sw-unit.DMA_BYTE_CLOCKS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch unit.DMA_BYTE_CLOCKS=14
+sw-cdda.FADE_SLOW_SECONDS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch cdda.FADE_SLOW_SECONDS=3.0
+sw-cdda.FADE_FAST_SECONDS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch cdda.FADE_FAST_SECONDS=1.0
+sw-cdda.PCETECH_FADE	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch cdda.PCETECH_FADE=true
+sw-cdda.SUBQ_STATUS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch cdda.SUBQ_STATUS=1,2,3,0
+sw-adpcm.BASE_HZ	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch adpcm.BASE_HZ=32087.5
+sw-adpcm.READ_CLOCKS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch adpcm.READ_CLOCKS=57
+sw-adpcm.WRITE_CLOCKS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch adpcm.WRITE_CLOCKS=33
+sw-adpcm.SATURATE	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch adpcm.SATURATE=false
+sw-adpcm.OUTPUT_SCALE	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch adpcm.OUTPUT_SCALE=16
+sw-adpcm.END_ON_WRITE_AT_ZERO	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch adpcm.END_ON_WRITE_AT_ZERO=false
+sw-arcade.UNMAPPED_READ	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch arcade.UNMAPPED_READ=0
+sw-arcade.SHIFT_READ_MASK	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch arcade.SHIFT_READ_MASK=255
+sw-arcade.TRIGGER_REG_READ	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch arcade.TRIGGER_REG_READ=255
+sw-arcade.POWER_ON_RAM_BYTE	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch arcade.POWER_ON_RAM_BYTE=165
+sw-unit.DMA_BYTE_CLOCKS-90	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch unit.DMA_BYTE_CLOCKS=90
+sw-adpcm.READ_CLOCKS-0	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch adpcm.READ_CLOCKS=0
+sw-adpcm.WRITE_CLOCKS-0	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch adpcm.WRITE_CLOCKS=0
+sw-cdda.PCETECH_SLOW_SECONDS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch cdda.PCETECH_FADE=true --switch cdda.PCETECH_SLOW_SECONDS=10.0
+sw-cdda.PCETECH_FAST_SECONDS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --switch cdda.PCETECH_FADE=true --switch cdda.PCETECH_FAST_SECONDS=1.5
+sw-arcade.RESET_CLEARS_REGISTERS	600	$PROBE	$DISCS/mixed.cue	--arcade --super yes --reset 580:button --switch arcade.RESET_CLEARS_REGISTERS=true
+syscard-mixed	700	$SYSCARD	$DISCS/mixed.cue	--press run@449+20
+disc-Ryuuko no Ken	3000	$SYSCARD	chd:Ryuuko no Ken (Japan) (En,Ja,Es) (FACT)	--arcade --press run@449+20
+disc-Mad Stalker	3000	$SYSCARD	chd:Mad Stalker - Full Metal Force (Japan)	--arcade --press run@449+20
+disc-Sapphire	3000	$SYSCARD	chd:Ginga Fukei Densetsu Sapphire (Japan)	--arcade --press run@449+20
+disc-Addams Family	3000	$SYSCARD	chd:Addams Family, The (USA)	--press run@449+20
+disc-Pyramid Plunder	3000	$SYSCARD	chd:Pyramid Plunder (USA) (Unl)	--press run@449+20
+disc-Insanity	3000	$SYSCARD	chd:Insanity (USA) (Unl)	--press run@449+20
