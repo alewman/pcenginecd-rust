@@ -26,4 +26,4 @@ fetch() { # name pin commit source
 fetch pcenginecd-python 54b3446 54b34466c1fe599f93058d0cfa201060b7a1bb79 "${PCENGINECD_PYTHON:-https://github.com/alewman/pcenginecd-python}"
 fetch pcengine-python 647de63 647de63f60ce7a6a74f584c4e37673c2ba1505ba "${PCENGINE_PYTHON:-https://github.com/alewman/pcengine-python}"
 fetch huc6280-python 5cff9e8 5cff9e8afa68cf3e0b8507ddfd84c8a36f4b2c21 "${HUC6280_PYTHON:-https://github.com/alewman/huc6280-python}"
-fetch 6502-python 2146eba 2146eba3b3da4d2cc6c8fa3994f100bcb5abf039 "${SIXFIVEOHTWO_PYTHON:-https://github.com/alewman/6502-python}"
+fetch 6502-python 58d6d32 58d6d32d2cea5749134885be0c6eff7eed29cb41 "${SIXFIVEOHTWO_PYTHON:-https://github.com/alewman/6502-python}"  # 2146eba after the history rewrite of 2026-11-21 (same tree)
